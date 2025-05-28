@@ -1,11 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Biandda</title>
+    <title>Panadería Artesanal - Pan Fresco Cada Día</title>
+    <link rel="stylesheet" href="/cssFiles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>LA BIANDDA</h1>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                    </div>
+                    <span class="logo-text">La Biandda</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#nosotros" class="nav-link">Sobre Nosotros</a>
+                    <a href="#productos" class="nav-link">Productos</a>
+                    <a href="#contacto" class="contact-btn">Contacto</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#inicio" class="mobile-nav-link">Inicio</a>
+                <a href="#nosotros" class="mobile-nav-link">Sobre Nosotros</a>
+                <a href="#productos" class="mobile-nav-link">Productos</a>
+                <a href="#contacto" class="mobile-contact-btn">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Pan Fresco Cada Día</h1>
+            <p class="hero-subtitle">Directo de Nuestra Fábrica</p>
+            <p class="hero-description">
+                Elaboramos pan artesanal y tallarines frescos con ingredientes de la más alta calidad, 
+                manteniendo las tradiciones familiares de generación en generación.
+            </p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn btn-primary">Ver Productos</a>
+                <a href="#contacto" class="btn btn-secondary">Contactar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Nosotros</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        Desde hace más de 30 años, nuestra familia se ha dedicado con pasión a la elaboración de pan fresco y
+                        tallarines artesanales. Comenzamos como un pequeño negocio familiar y hemos crecido manteniendo siempre
+                        nuestro compromiso con la calidad y la tradición.
+                    </p>
+                    <p class="about-paragraph">
+                        Utilizamos únicamente ingredientes frescos y naturales, siguiendo recetas tradicionales que han sido
+                        perfeccionadas a lo largo de los años. Nuestro objetivo es llevar a tu mesa productos que no solo
+                        alimenten, sino que también despierten los sentidos y creen momentos especiales en familia.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" alt="Nuestra panadería" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Productos Destacados</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    Descubre nuestra selección de panes artesanales, elaborados diariamente con ingredientes frescos y
+                    técnicas tradicionales.
+                </p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card" data-product="1">
+                    <div class="product-image">
+                        <img class="bread-img" src="/Imagenes/PandeSadwiches.png" alt="Pan de Molde Clásico" />
+                        <img class="sandwich-img" src="/Imagenes/Sandichescalietnes.png" alt="Sandwich" />
+                    </div>
+                    <h3 class="product-name">Pan de Sándwiches</h3>
+                    <p class="product-description">Pan suave y esponjoso, perfecto para tus desayunos y meriendas diarias.</p>
+                </div>
+
+                <div class="product-card" data-product="2">
+                    <div class="product-image">
+                        <img class="bread-img" src="/Imagenes/PandeSadwiches.png" alt="Pan Integral" />
+                        <img class="sandwich-img" src="/Imagenes/Sandichescalietnes.png" alt="Sandwich Integral" />
+                    </div>
+                    <h3 class="product-name">Pan de Sándwiches</h3>
+                    <p class="product-description">Rico en fibra y nutrientes, ideal para una alimentación saludable.</p>
+                </div>
+
+                <div class="product-card" data-product="3">
+                    <div class="product-image">
+                        <img class="bread-img" src="/Imagenes/PandeSadwiches.png" alt="Pan de Centeno" />
+                        <img class="sandwich-img" src="/Imagenes/Sandichescalietnes.png" alt="Sandwich de Centeno" />
+                    </div>
+                    <h3 class="product-name">Pan de Sándwiches</h3>
+                    <p class="product-description">Sabor único y textura especial, perfecto para sandwiches gourmet.</p>
+                </div>
+
+                <div class="product-card" data-product="4">
+                    <div class="product-image">
+                        <img class="bread-img" src="/Imagenes/PandeSadwiches.png" alt="Pan Artesanal" />
+                        <img class="sandwich-img" src="/Imagenes/Sandichescalietnes.png" alt="Sandwich Artesanal" />
+                    </div>
+                    <h3 class="product-name">Pan de Sándwiches</h3>
+                    <p class="product-description">Elaborado con recetas tradicionales y ingredientes seleccionados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacto</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">
+                    ¿Tienes alguna pregunta o quieres hacer un pedido especial? No dudes en contactarnos.
+                </p>
+            </div>
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Teléfono</h3>
+                            <p>4313 2857</p>
+                            <h3>Celular</h3>
+                            <p>+598 99167722</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>labiandda@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Dirección</h3>
+                            <p>Calle General Artigas SN<br>Santa Rosa, Canelones</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" placeholder="Cuéntanos cómo podemos ayudarte..." rows="4" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 12h20"/>
+                                <path d="M2 5h20"/>
+                                <path d="M2 19h20"/>
+                                <path d="M12 2v20"/>
+                            </svg>
+                        </div>
+                        <span class="logo-text">Panadería Artesanal</span>
+                    </div>
+                    <p class="footer-description">
+                        Tradición familiar en cada producto. Pan fresco y tallarines artesanales elaborados con amor y dedicación.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Horarios</h3>
+                    <div class="footer-hours">
+                        <p>Lunes - Viernes: 8:00 - 16:00 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> LA BIANDDA SAS. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/jsFiles/script.js"></script>
 </body>
 </html>

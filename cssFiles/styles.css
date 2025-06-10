@@ -305,6 +305,9 @@ body {
   align-items: center;
 }
 
+.about-text {
+  space-y: 1.5rem;
+}
 
 .about-paragraph {
   font-size: 1.425rem;
@@ -404,7 +407,7 @@ body {
 /* Then add this CSS rule */
 .productos-desarrollo .product-image {
   aspect-ratio: 1 / 1;
-  height: 25em;
+  height: auto;
   width: 100%;
 }
 
@@ -630,6 +633,14 @@ body {
 
   .logo img {
     max-height: 2.5rem;
+  }
+
+  /* Igualar el tamaño de las imágenes en móviles */
+  .productos-desarrollo .product-image {
+    height: 200px;
+    aspect-ratio: 1 / 1;
+    width: 200px;
+    margin: 0 auto;
   }
 }
 

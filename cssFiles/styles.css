@@ -404,7 +404,7 @@ body {
 /* Then add this CSS rule */
 .productos-desarrollo .product-image {
   aspect-ratio: 1 / 1;
-  height: 20em;
+  height: 25em;
   width: 100%;
 }
 
